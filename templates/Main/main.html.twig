@@ -1,0 +1,14 @@
+{% extends "base.html.twig"%}
+    {% block header%}
+    {% include "/Main/Header.html" %}
+    {% endblock %}
+{% block body%}
+    <h2 class="Label-page">Главная</h2>
+    <div class="container-fluid">
+        <h2 class="Label-page-main">КАТАЛОХ</h2>
+            <div class="col card">
+                <h2 id="title-product">Штука №1</h2>
+             <h1>{{ number }}</h1>
+            </div>
+        </div>
+{% endblock %}
