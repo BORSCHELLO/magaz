@@ -3,6 +3,16 @@
     {% include "/Main/Header.html" %}
     {% endblock %}
 {% block body%}
+    <div class="container-fluid pt-2">
+        <div class="row no-gutters justify-content-center">
+            <div class="col-8">
+                {% for message in app.flashes('success') %}
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
     <h2 class="Label-page">Главная</h2>
     <div class="container-fluid">
         <h2 class="Label-page-main">КАТАЛОХ</h2>
@@ -11,4 +21,5 @@
              <h1>{{ number }}</h1>
             </div>
         </div>
+    </div>
 {% endblock %}
